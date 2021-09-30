@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            var num1 = prompt("Digite o primeiro número");
+            var sinal= prompt("digite o sinal matemático");
+            var num2 = prompt("digite o segundo número");
+
+            while(sinal != "-" && sinal != "+"  && sinal !="/" && sinal !="*"){
+                alert('Por favor insira um sinal de operação valido.')
+                var sinal= prompt("digite o sinal matemático");
+            
+            }
+            var resultadoFinal = 0;
+           //função nativa do JS que transforma uma string em um numero.
+            num1 = parseInt(num1)
+            num2 = parseInt(num2)
+
+            if(sinal == "+"){
+                 var resultadoFinal = num1 + num2;
+                
+            }if(sinal == "-"){
+                var resultadoFinal = num1 - num2;
+            }if(sinal =="/"){
+               var resultadoFinal = num1 / num2
+            }if(sinal =="*"){
+                var resultadoFinal = num1 * num2
+            }
+            
+            alert("o resultado é " + resultadoFinal)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            var anoNasc = prompt('Insira o ano nascimento');
+            while(anoNasc >=2021){
+                alert('Informe o seu ano de nascimento corretamente. ');
+                var anoNasc = prompt('Insira o ano nascimento');
+            }if (anoNasc < 2021){
+                var anoAtual = prompt('Insira o ano atual');
+                console.log();
+            }
+           
+            // var anoAtual = prompt('Insira o ano atual');
+        
+            var idadeFinal = anoAtual - anoNasc;
+            
+            alert('A idade é '+ idadeFinal);
+       </script>
+    </body>
+</html>
